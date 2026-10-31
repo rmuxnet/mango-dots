@@ -1,0 +1,34 @@
+{
+    "layer": "top",
+    "height": 26,
+    "sys-interval": 2,
+    "modules-left": ["workspaces", "layout"],
+    "modules-center": [],
+    "modules-right": ["custom/mem", "custom/sep", "clock#time"],
+    "workspaces": {
+        "hide-empty": false,
+        "tag-names": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        "overview-label": "OV",
+        "on-click": "activate",
+        "on-click-right": "toggle",
+        "scroll-interval": 100,
+        "on-scroll-up": "mmsg dispatch viewtoleft_have_client",
+        "on-scroll-down": "mmsg dispatch viewtoright_have_client"
+    },
+    "layout": {
+        "format": "{}"
+    },
+    "custom/mem": {
+        "exec": "free -m | awk '/^Mem:/{printf \"%.1fG\", ($2-$4-$6)/1024}'",
+        "interval": 2,
+        "format": "{}",
+        "on-click": "foot -e btop"
+    },
+    "custom/sep": {
+        "exec": "echo '|'",
+        "format": "{}"
+    },
+    "clock#time": {
+        "format": "%H:%M"
+    }
+}

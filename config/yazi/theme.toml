@@ -1,0 +1,42 @@
+[mgr]
+cwd = { fg = "#CBA6F7" }
+hovered = { fg = "#0a0a0a", bg = "#CBA6F7" }
+preview_hovered = { underline = true }
+find_keyword = { fg = "#f2deaa", bold = true }
+marker_selected = { fg = "#b9e3b5", bg = "#b9e3b5" }
+marker_copied = { fg = "#f2deaa", bg = "#f2deaa" }
+marker_cut = { fg = "#f4a6b7", bg = "#f4a6b7" }
+border_symbol = "│"
+border_style = { fg = "#2a2a2e" }
+
+[tabs]
+active = { fg = "#0a0a0a", bg = "#CBA6F7", bold = true }
+inactive = { fg = "#8a8a8e", bg = "#1c1c1f" }
+
+[mode]
+normal_main = { fg = "#0a0a0a", bg = "#CBA6F7", bold = true }
+normal_alt = { fg = "#CBA6F7", bg = "#1c1c1f" }
+select_main = { fg = "#0a0a0a", bg = "#b9e3b5", bold = true }
+select_alt = { fg = "#b9e3b5", bg = "#1c1c1f" }
+unset_main = { fg = "#0a0a0a", bg = "#f4a6b7", bold = true }
+unset_alt = { fg = "#f4a6b7", bg = "#1c1c1f" }
+
+[status]
+perm_type = { fg = "#a8bff7" }
+perm_read = { fg = "#f2deaa" }
+perm_write = { fg = "#f4a6b7" }
+perm_exec = { fg = "#b9e3b5" }
+perm_sep = { fg = "#4a4a52" }
+progress_label = { fg = "#e8e6ef", bold = true }
+progress_normal = { fg = "#CBA6F7", bg = "#1c1c1f" }
+progress_error = { fg = "#f4a6b7", bg = "#1c1c1f" }
+
+[filetype]
+rules = [
+    { mime = "image/*", fg = "#a6dfe6" },
+    { mime = "video/*", fg = "#f2deaa" },
+    { mime = "audio/*", fg = "#f2deaa" },
+    { mime = "application/{zip,gzip,x-tar,x-xz,zstd,x-7z-compressed}", fg = "#f4a6b7" },
+    { url = "*", is = "exec", fg = "#b9e3b5" },
+    { url = "*/", fg = "#CBA6F7" },
+]
