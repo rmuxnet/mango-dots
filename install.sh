@@ -86,8 +86,8 @@ for src in "$DIR"/config/*; do
 done
 
 say "setting up fish plugins and tide prompt"
-fish -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher update' || true
-fish "$DIR/fish/tide.fish"
+fish -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher update' </dev/null || true
+fish "$DIR/fish/tide.fish" </dev/null
 
 say "applying GTK settings"
 if command -v gsettings >/dev/null; then
