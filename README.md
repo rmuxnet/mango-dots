@@ -9,8 +9,6 @@ Arch + mango rice. OLED black, lilac `#CBA6F7`, PS3 XMB wave as a live wallpaper
 | ![fetch](screenshots/fetch.png) | ![nvim and yazi](screenshots/nvim-yazi.png) |
 | ![btop and clock](screenshots/btop-clock.png) | ![rofi](screenshots/rofi.png) |
 
-The screenshots use the snow white wave preset. The default is the lilac wave on a dark purple background.
-
 ## What is in it
 
 | Part | Program |
@@ -78,8 +76,8 @@ Presets:
 
 | Look | Env |
 |---|---|
-| Lilac on purple (default) | `XMB_GAIN=3.0 XMB_INK=CBA6F7 XMB_BG=100B18` |
-| Snow white | `XMB_GAIN=3.0` |
+| Snow white (default) | `XMB_GAIN=3.0` |
+| Lilac on purple | `XMB_GAIN=3.0 XMB_INK=CBA6F7 XMB_BG=100B18` |
 | White background, black wave | `XMB_GAIN=3.0 XMB_INK=000000 XMB_BG=ffffff` |
 
 Change the `exec_once` line for `xmbwave-sway` in the mango config.
