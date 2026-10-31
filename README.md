@@ -31,7 +31,7 @@ Arch + mango rice. OLED black, lilac `#CBA6F7`, PS3 XMB wave as a live wallpaper
 ## Install
 
 ```sh
-git clone git@github.com:rmuxnet/mango-dots.git
+git clone https://github.com/rmuxnet/mango-dots.git
 cd mango-dots
 ./install.sh
 ```
